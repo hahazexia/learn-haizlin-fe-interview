@@ -241,3 +241,12 @@ const randomArr = tco(function (count, min, max, arr = []) {
 这样优化后就不会调用栈溢出了。
 </details>
 <br><br>
+
+4. html 的元素有哪些？[链接](https://github.com/haizlin/fe-interview/issues/4)
+
+<details>
+<summary>答案</summary>
+
+
+</details>
+<br><br>
