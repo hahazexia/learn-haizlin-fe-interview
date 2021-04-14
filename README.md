@@ -1,6 +1,6 @@
 # learn-haizlin-fe-interview
 
-学习整理 [haizlin](https://github.com/haizlin) 的[前端题](https://github.com/haizlin/fe-interview)
+学习整理 [haizlin](https://github.com/haizlin) 的 [前端题](https://github.com/haizlin/fe-interview)
 
 <br><br><br>
 
@@ -368,7 +368,7 @@ const randomArr = tco(function (count, min, max, arr = []) {
 <details>
 <summary>答案</summary>
 
-* 去除中间空格使用了 ES2018 新增特性正则表达式的后行断言（lookbehind ），对浏览器有兼容性要求，具体兼容性请去[caniuse](https://www.caniuse.com/?search=lookbehind) 查看。
+* 去除中间空格使用了 ES2018 新增特性正则表达式的后行断言（lookbehind ），对浏览器有兼容性要求，具体兼容性请去 [caniuse](https://www.caniuse.com/?search=lookbehind) 查看。
 
 ```js
 function trim (str, type = 'default') {
