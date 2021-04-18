@@ -123,3 +123,52 @@
 
 </details>
 <br><br>
+
+3. HTML全局属性(global attribute)有哪些？[链接](https://github.com/haizlin/fe-interview/issues/7)
+
+<details>
+<summary>答案</summary>
+
+|  属性  | 描述  |
+| ------ | ------ |
+|  accesskey  | 为当前元素生成快捷键 |
+|  autocapitalize  | 控制用户的文本输入是否和如何自动大写 |
+|  class  | 以空格分隔的元素的类名（classes ）列表，它允许 CSS 和 Javascript 通过类选择器或DOM方法来选择和访问特定的元素 |
+|  contenteditable  | 表示元素是否可被用户编辑，值为 true 或 false |
+|  data-*  | 自定义数据属性，HTMLElement.dataset 属性可以访问这些数据 |
+|  dir  | 指示元素中文本方向 |
+|  draggable  | 指示是否可以 使用 Drag and Drop API (en-US) 拖动元素。 |
+|  hidden  | 表示一个元素尚未或者不再相关。例如，它可以被用来隐藏一个页面元素直到登录完毕。如果一个元素设置了这个属性，它就不会被显示。 |
+|  id  | 唯一标识符 |
+|  inputmode  | 提供了用户在编辑元素或其内容时可能输入的数据类型的提示 |
+|  is  | 允许您指定标准HTML元素应该像已注册的自定义内置元素一样 |
+|  lang  | 元素语言的定义 |
+|  style  | CSS样式 |
+|  tabindex  | 元素是否可以获取输入焦点（可聚焦），是否应该参与顺序键盘导航 |
+|  title  | 包含表示与其所属元素相关信息的文本 |
+
+
+
+* autocapitalize 控制用户的文本输入是否和如何自动大写，它可以有以下的值：
+    * off or none，没有应用自动大写（所有字母都默认为小写字母）。
+    * on or sentences，每个句子的第一个字母默认为大写字母;所有其他字母都默认为小写字母。
+    * words，每个单词的第一个字母默认为大写字母;所有其他字母都默认为小写字母。
+    * characters，所有的字母都应该默认为大写。
+* dir 指示元素中文本方向
+    * ltr, 指从左到右，用于那种从左向右书写的语言（比如英语）；
+    * rtl, 指从右到左，用于那种从右向左书写的语言（比如阿拉伯语）；
+    * auto, 指由用户代理决定方向。
+* inputmode 提供了用户在编辑元素或其内容时可能输入的数据类型的提示
+    * "none" 无虚拟键盘。在应用程序或者站点需要实现自己的键盘输入控件时很有用。
+    * "text"使用用户本地区域设置的标准文本输入键盘。
+    * "decimal"小数输入键盘，包含数字和分隔符（通常是“ . ”或者“ , ”），设备可能也可能不显示减号键。
+    * "numeric"数字输入键盘，所需要的就是0到9的数字，设备可能也可能不显示减号键。
+    * "tel"电话输入键盘，包含0到9的数字、星号（*）和井号（#）键。表单输入里面的电话输入通常应该使用 `<input type="tel">` 。
+    * "search"为搜索输入优化的虚拟键盘，比如，返回键可能被重新标记为“搜索”，也可能还有其他的优化。
+    * "email"为邮件地址输入优化的虚拟键盘，通常包含"@"符号和其他优化。表单里面的邮件地址输入应该使用 `<input type="email">` 。
+    * "url"为网址输入优化的虚拟键盘，比如，“/”键会更加明显、历史记录访问等。表单里面的网址输入通常应该使用 `<input type="url">` 。
+
+[参考链接](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes)
+</details>
+<br><br>
+

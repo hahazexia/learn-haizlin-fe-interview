@@ -121,3 +121,20 @@
 ```
 </details>
 <br><br>
+
+2. 在页面上隐藏元素的方法有哪些？[链接](https://github.com/haizlin/fe-interview/issues/8)
+
+<details>
+<summary>答案</summary>
+
+|  方法  | 是否占据空间  | 是否响应事件 | 补充说明 |
+| ------ | ------ | ------ | ------ |
+|  display: none;  |  否 |  否  |  会引起回流和重绘  |
+|  visibility: hidden;  |  是 |  否  |  -  |
+|  opacity: 0;  |  是 |  是  |  会引起重绘  |
+|  position: absolute;top: -100px;将元素移除可见区域  |  是 |  -  |  -  |
+|  transform: scale(0);将元素缩放为 0 尺寸  |  是 |  否  |  -  |
+|  z-index: -999;层级调低的同时在同样的位置上用其他元素覆盖  |  是 |  否  |  -  |
+|  ransform: rotateY(90deg);或transform: rotateX(90deg);使元素在 x/y 轴不可见  |  是 |  -  |  -  |
+</details>
+<br><br>

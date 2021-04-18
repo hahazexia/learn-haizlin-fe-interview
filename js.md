@@ -126,3 +126,27 @@ function trim (str, type = 'default') {
 ```
 </details>
 <br><br>
+
+3. 去除字符串中最后一个指定的字符 [链接](https://github.com/haizlin/fe-interview/issues/9)
+
+<details>
+<summary>答案</summary>
+
+```js
+function removeStr (str, char) {
+    let reg = new RegExp(`${char}(?=([^${char}]*)$)`)
+    return str.replace(reg, '')
+}
+
+removeStr('ssdddfff123fcc', '123f')
+```
+
+```js
+function delLast (str, del) {
+    let index = str.lastIndexOf(del);
+    return str.substring(0, index) + str.substring(index + del.length, str.length);
+}
+delLast('ssdddfff123fcc', '123f')
+```
+</details>
+<br><br>
